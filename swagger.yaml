@@ -1,0 +1,25 @@
+swagger: "2.0"
+info:
+  description: "This is a sample server that sends messages to users"
+  version: "1.0.0"
+  title: "Telegram Bot Server"
+host: "localhost:10000"
+basePath: "/"
+tags:
+- name: "sendMessage"
+  description: "sends message to users"
+paths:
+  /sendMessage:
+    post:
+      tags:
+      - "sendMessage"
+      summary: ""
+      description: "send message"
+      operationId: ""
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      responses:
+        "200":
+          description: "OK"
